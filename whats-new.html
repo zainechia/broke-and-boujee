@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Custom link for stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Custom link for Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Custom link for Google Icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<!-- Custom link for Font Awesome icons -->
+		<script src="https://kit.fontawesome.com/9cec328266.js" crossorigin="anonymous"></script>
+		
+		<title>Find The Perfect Gift For Anyone and Any Occasion | Broke & Boujee</title>
+	</head>
+
+	<body>
+		
+		<!-- Header/Nav bar shown on every page -->
+  	<header class="global-header">
+
+			<div class="header-row">
+
+				<!-- Hamburger menu -->
+				<a href="#" class="toggle-button">
+					<i class="fa-solid fa-bars fa-xl"></i>
+				</a>
+
+				<!-- Logo -->
+				<div class="global-logo">
+					<a href="index.html">Broke & Boujee</a>
+				</div>
+
+				<!-- Navigation menu starts here -->
+				<nav class="nav-menu">
+					<ul class="nav-menu-links">
+
+						<!-- What's New -->
+						<li><a href="whats-new.html">What's New</a></li>
+
+						<!-- Gifts dropdown menu -->
+						<li id="gifts">
+							<span>Gifts <i class="fa fa-angle-down"></i></span>
+							
+							<div class="sub-nav">
+
+								<div class="sub-nav-box">
+									<br>
+									<h4>Gifts by Category</h4>
+									<ul>
+										<li><a href="category-random.html">Random</a></li>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+									</ul>
+								</div>
+								
+								<div class="sub-nav-box">
+									<br>
+									<h4>Gifts by Recipient</h4>
+									<ul>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+									</ul>
+								</div>
+
+								<div class="sub-nav-box">
+									<br>
+									<h4>Gifts by Occasion</h4>
+									<ul>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+									</ul>
+								</div>
+
+								<div class="sub-nav-box">
+									<br>
+									<h4>Gifts by Interest</h4>
+									<ul>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+										<li><a href="#">Coming Soon</a></li>
+										<div class="space"></div>
+									</ul>
+
+								</div>
+							</div>
+						</li>
+
+						<!-- Gift Guides -->
+						<li><a href="gift-guides.html"> Gift Guides</a></li>
+
+						<!-- Contact Us -->
+						<li><a href="contact-us.html"> Contact Us</a></li>
+
+					</ul>
+				</nav>
+				
+				<!-- Icon menu - wishlist, login/sign up -->
+				<div class="icon-menu">
+
+						<a href="wishlist.html" class="nav-icons">
+							<i class="fa-regular fa-heart fa-lg"></i>
+						</a>
+
+						<span class="nav-icons" id="profile-icon">
+							<i class="fa-regular fa-user fa-lg"></i>
+						</span>
+
+				</div>
+				
+			</div>
+    </header>
+    
+    <!-- Signup/Login pop ups available on every page -->
+		<div class="popup-container">
+      
+			<!-- Signup popup window that appears upon clicking person/profile icon -->
+			<div class="signup-popup">
+				<div id="signup-close-btn">
+					<span class="material-symbols-outlined">close</span>
+				</div>
+				<form id="signup-form">
+					<h2>Sign up</h2>
+					<p class="form-element">
+						Create an account to customize wishlists! Already have an account? <span id="login-link">Log in</span>
+					</p>
+					
+					<div class="form-element">
+						<label for="email">Email</label>
+						<input type="text" placeholder="Enter email address" id="signup-email" required>
+					</div>
+					
+					<div class="form-element">
+						<label for="password">Password</label>
+						<input type="password" placeholder="Enter password" id="signup-password" required>
+					</div>
+					<div class="form-element">
+						<button>Sign up</button>
+					</div>
+				</form>
+			</div>
+			
+			<!-- Login popup window that appears upon clicking Log in in Signup popup window -->
+			<div class="login-popup">
+				<div id="login-close-btn">
+					<span class="material-symbols-outlined">close</span>
+				</div>
+				<form id="login-form">
+					<h2>Log in</h2>
+					<p class="form-element">
+						Log in to view and create wishlists! Don't have an account? <span id="signup-link">Sign up</span>
+					</p>
+					
+					<div class="form-element">
+						<label for="email">Email</label>
+						<input type="text" placeholder="Enter email address" id="login-email" required>
+					</div>
+					
+					<div class="form-element">
+						<label for="password">Password</label>
+						<input type="password" placeholder="Enter password" id="login-password" required>
+					</div>
+					<div class="form-element">
+						<button>Log in</button>
+					</div>
+					<div class="form-element">
+						<a href="#">Forgotten password?</a>
+					</div>
+				</form>
+			</div> 
+		</div>
+
+		<!-- Whats New page content begins here. Prior content is all copied across the webpages -->
+  	<section class="whats-new-page">
+
+      <h1>What's New</h1>
+			<hr>
+
+      <!-- Products catalogue -->
+      <div class="products-container">
+        
+				<!-- Product 1 -->
+				<div class="product" data-name="p-1">
+          <div class="price">$24.99</div>
+          <div class="image-container">
+            <img src="images/products/1-floating-wall-shelves.jpg" alt="Floating Wall Shelves">
+          </div>
+					<div class="product-title">
+						<p>
+							OAPRIRE White Floating Wall Shelves Set of 2 | Stick-On & Damage-Free
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.amazon.com.au/OAPRIRE-Floating-Shelves-Damage-Free-Bathroom/dp/B07Y51CSGR/ref=sr_1_3_sspa?crid=KY23UZ91B0BI&keywords=floating%2Bwall%2Bshelf&qid=1681395631&sprefix=floating%2Bwall%2Bshel%2Caps%2C249&sr=8-3-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzNDJMM1NITUQzVkpWJmVuY3J5cHRlZElkPUEwMDExOTA1MUNTRkRLNFgwVjdPOCZlbmNyeXB0ZWRBZElkPUFNMFVFVzFQNThDUk0md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 2 -->
+        <div class="product" data-name="p-2">
+          <div class="price">$71.98</div>
+          <div class="image-container">
+            <img src="images/products/2-teletubbies.jpg" alt="Teletubbies Costume">
+          </div>
+					<div class="product-title">
+						<p>
+							Unisex Teletubbies Costumes / Onesies / Pajamas | Various Colors and Sizes Available
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.etsy.com/au/listing/1291117381/unisex-teletubbies-costumes-disi-onesies?click_key=c172c7e0dc2e34c05ce34c37a57064647951bc8e%3A1291117381&click_sum=eafa4230&ref=hp_rv-4" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 3 -->
+        <div class="product" data-name="p-3">
+          <div class="price">$26+</div>
+          <div class="image-container">
+            <img src="images/products/3-personalised-water-bottle.jpg" alt="Personalised Water Bottle">
+          </div>
+					<div class="product-title">
+						<p>
+							Personalised Water Bottle 500mL | Insulated Stainless Steel Bottle 
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.etsy.com/au/listing/1242431904/personalised-water-bottle-500ml?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=gift+for+women&ref=sr_gallery-1-14&frs=1&bes=1&sts=1&organic_search_click=1" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 4 -->
+        <div class="product" data-name="p-4">
+          <div class="price">$24.70</div>
+          <div class="image-container">
+            <img src="images/products/4-shark-toy.jpg" alt="Shark Toy">
+          </div>
+					<div class="product-title">
+						<p>
+							Intex Shark Swimming Toy            
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.amazon.com.au/dp/B00H5B7KS2/ref=cm_gf_aK4N_d_p0_e0_qd3_yLK8bLi1AluF63zs9cOo" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 5 -->
+        <div class="product" data-name="p-5">
+          <div class="price">$94.81</div>
+          <div class="image-container">
+            <img src="images/products/5-cuisinart.jpg" alt="Cuisinart BBQ Tool">
+          </div>
+					<div class="product-title">
+						<p>
+							Cuisinart CGS-5020 BBQ Tool Aluminum Carrying Case, Deluxe Grill Set, 20-Piece
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.amazon.com.au/Cuisinart-CGS-5020-Deluxe-Silver-20-Piece/dp/B013TR2ENQ/ref=sr_1_6?keywords=barbeque%2Bset&qid=1681431586&sr=8-6&th=1" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 6 -->
+        <div class="product" data-name="p-6">
+          <div class="price">$12.99+</div>
+          <div class="image-container">
+            <img src="images/products/6-how-to-win-friends.jpg" alt="How To Win Friends Book">
+          </div>
+					<div class="product-title">
+						<p>
+							How to Win Friends and Influence People in the Digital Age | Available in Kindle, Hardcover, Paperback, Audio CD
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.amazon.com.au/How-Friends-Influence-People-Digital/dp/0857207288/ref=sr_1_5?keywords=how+to+win+friends+and+influence+people&qid=1683770160&sprefix=how+to+win+fr%2Caps%2C331&sr=8-5" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 7 -->
+				<div class="product" data-name="p-7">
+          <div class="price">$5.04+</div>
+          <div class="image-container">
+            <img src="images/products/7-dickasaurus.jpg" alt="Floating Wall Shelves">
+          </div>
+					<div class="product-title">
+						<p>
+							Glow In The Dark! Dino-Dick Dickasaurus Rex Bachelorette Party Gift Funny Prank Green and Blue Glow						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.etsy.com/listing/969314313/glow-in-the-dark-dino-dick-dickasaurus?show_sold_out_detail=1&source=aw&utm_source=affiliate_window&utm_medium=affiliate&utm_campaign=us_location_buyer&utm_content=141392&utm_term=0&awc=6220_1684671408_6d0abed72b7c9fe050a3cb867eee2ad0" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+				<!-- Product 8 -->
+        <div class="product" data-name="p-8">
+          <div class="price">$47.24</div>
+          <div class="image-container">
+            <img src="images/products/8-taco-slippers.jpg" alt="Teletubbies Costume">
+          </div>
+					<div class="product-title">
+						<p>
+							Coddies Taco Slippers | Christmas Gift, Unisex Funny Slippers, Novelty Comfortable Pantuflas | Men, Women & Kids
+						</p>
+					</div>
+					<div class="link-wishlist">
+						<a href="https://www.etsy.com/listing/987140438/coddies-taco-slippers-christmas-gift?show_sold_out_detail=1&source=aw&utm_source=affiliate_window&utm_medium=affiliate&utm_campaign=us_location_buyer&utm_content=141392&utm_term=0&awc=6220_1684671698_9409e1fe5c9a8b53577da8775715b79c" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+						<i class="fa-regular fa-heart fa-lg"></i>
+					</div>
+        </div>
+
+      </div>
+
+    	<!-- Products preview/popup -->
+			<div class="products-preview">
+
+				<!-- Product 1 -->
+				<div class="preview" data-target="p-1">
+					
+					<div class="close-btn">
+						<span class="material-symbols-outlined">close</span>
+					</div>
+
+					<!-- Left half of pop up -->
+					<div class="product-imgs">
+
+						<div class="img-featured">
+							<img src="images/products/1-floating-wall-shelves.jpg"alt="Floating Wall Shelves 1">
+						</div>
+
+						<div class = "img-select">
+							<div class = "img-item">
+								<img src="images/products/1-floating-wall-shelves.jpg"alt="Floating Wall Shelves 1">
+							</div>
+							<div class = "img-item">
+								<img src="images/products/1-floating-wall-shelves2.jpg"alt="Floating Wall Shelves 2">
+							</div>
+							<div class = "img-item">
+								<img src="images/products/1-floating-wall-shelves3.jpg"alt="Floating Wall Shelves 3">
+							</div>
+							<div class = "img-item">
+								<img src="images/products/1-floating-wall-shelves4.jpg"alt="Floating Wall Shelves 4">
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Right half of pop up -->
+					<div class="product-details">
+						<h3>
+							OAPRIRE White Floating Wall Shelves Set of 2 | Stick-On & Damage-Free.
+						</h3>
+						<p>
+							Upgrade your space with OAPRIRE Floating Shelves. Crafted from high-quality acrylic, they offer reliability and strength, holding up to 8 pounds securely. With the trusted 3M adhesive, these shelves ensure a long-lasting attachment, just like GoPro. Unleash your creativity and maximize space with customizable combinations, expanding storage options for Security Cameras, Smart Speakers, Switches, Action Figures, and more. Enjoy safe and damage-free placement of your cherished items.
+						</p>
+						<div class="footer">
+							<a href="https://www.amazon.com.au/OAPRIRE-Floating-Shelves-Damage-Free-Bathroom/dp/B07Y51CSGR/ref=sr_1_3_sspa?crid=KY23UZ91B0BI&keywords=floating%2Bwall%2Bshelf&qid=1681395631&sprefix=floating%2Bwall%2Bshel%2Caps%2C249&sr=8-3-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzNDJMM1NITUQzVkpWJmVuY3J5cHRlZElkPUEwMDExOTA1MUNTRkRLNFgwVjdPOCZlbmNyeXB0ZWRBZElkPUFNMFVFVzFQNThDUk0md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1" 
+							target="_blank" class="check-it-out">CHECK IT OUT</a>
+
+							<div class="price">
+								$24.99
+							</div>
+
+							<i class="fa-regular fa-heart fa-lg"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Product 2 -->
+				<div class="preview" data-target="p-2">
+					
+					<div class="close-btn">
+						<span class="material-symbols-outlined">close</span>
+					</div>
+
+					<!-- Left half of pop up -->
+					<div class="product-imgs">
+
+						<div class="img-featured">
+							<img src="images/products/2-teletubbies.jpg"alt="Teletubbies Costume 1">
+						</div>
+
+						<div class = "img-select">
+							<div class = "img-item">
+								<img src="images/products/2-teletubbies.jpg"alt="Teletubbies Costume 1">
+							</div>
+							<div class = "img-item">
+								<img src="images/products/2-teletubbies2.jpg"alt="Teletubbies Costume 2">
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Right half of pop up -->
+					<div class="product-details">
+						<h3>
+							Unisex Teletubbies Costumes / Onesies / Pajamas | Various Colors and Sizes Available
+						</h3>
+						<p>
+							Relive your childhood in comfort and style with this Unisex Teletubbies onesie! This playful and comfortable onesie is made from soft and breathable Shu velvet, making it ideal as a comfortable pair of pyjamas or as a costume for your next party.
+						</p>
+						<div class="footer">
+							<a href="https://www.etsy.com/au/listing/1291117381/unisex-teletubbies-costumes-disi-onesies?click_key=c172c7e0dc2e34c05ce34c37a57064647951bc8e%3A1291117381&click_sum=eafa4230&ref=hp_rv-4" 
+							target="_blank" class="check-it-out">CHECK IT OUT</a>
+
+							<div class="price">
+								$71.98
+							</div>
+
+							<i class="fa-regular fa-heart fa-lg"></i>
+
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Product 3 -->
+				<div class="preview" data-target="p-3">
+					
+					<div class="close-btn">
+						<span class="material-symbols-outlined">close</span>
+					</div>
+
+					<!-- Left half of pop up -->
+					<div class="product-imgs">
+
+						<div class="img-featured">
+							<img src="images/products/3-personalised-water-bottle.jpg" alt="Personalised Water Bottle">
+						</div>
+
+						<div class = "img-select">
+
+							<div class = "img-item">
+								<img src="images/products/3-personalised-water-bottle.jpg" alt="Personalised Water Bottle">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/3-personalised-water-bottle2.jpg" alt="Personalised Water Bottle">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/3-personalised-water-bottle3.jpg" alt="Personalised Water Bottle">							
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/3-personalised-water-bottle4.jpg" alt="Personalised Water Bottle">
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- Right half of pop up -->
+					<div class="product-details">
+						<h3>
+							Personalised Water Bottle 500mL | Insulated Stainless Steel Bottle						
+						</h3>
+						<p>
+							Drink in style, ditch the plastic and never go thirsty again with this BPA-free Stainless Steel 500mL matte finish stainless steel personalised water bottle. This bottle is the perfect travel companion with its twist off lid to ensure a good leak proof seal when you're on the go. The insulated, double-walled construction will perfectly hold and maintain the temperature of your hot and cold liquid refreshments and prevent condensation - keeping your bottle dry.
+						</p>
+						<div class="footer">
+							<a href="https://www.etsy.com/au/listing/1242431904/personalised-water-bottle-500ml?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=gift+for+women&ref=sr_gallery-1-14&frs=1&bes=1&sts=1&organic_search_click=1" 
+							target="_blank" class="check-it-out">CHECK IT OUT</a>
+
+							<div class="price">
+								$26+
+							</div>
+
+							<i class="fa-regular fa-heart fa-lg"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Product 4 -->
+				<div class="preview" data-target="p-4">
+					
+					<div class="close-btn">
+						<span class="material-symbols-outlined">close</span>
+					</div>
+
+					<!-- Left half of pop up -->
+					<div class="product-imgs">
+
+						<div class="img-featured">
+							<img src="images/products/4-shark-toy.jpg" alt="Shark Toy">
+						</div>
+
+						<div class = "img-select">
+							<div class = "img-item">
+								<img src="images/products/4-shark-toy.jpg" alt="Shark Toy">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/4-shark-toy2.jpg" alt="Shark Toy">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/4-shark-toy3.jpg" alt="Shark Toy">
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- Right half of pop up -->
+					<div class="product-details">
+						<h3>
+							Intex Shark Swimming Toy  
+						</h3>
+						<p>
+							Introducing the Intex Shark Water Toy Swimming Toy – Dive into Fun!
+							<br>
+							Make a splash with our inflatable shark toy. It's safe, durable, and perfect for beach, pool parties, and sea adventures. Suitable for kids aged 3+, it comes with grab handles for added safety. Includes a repair patch for any unexpected leaks. Get ready for a thrilling water experience!
+						</p>
+						<div class="footer">
+							<a href="https://www.amazon.com.au/dp/B00H5B7KS2/ref=cm_gf_aK4N_d_p0_e0_qd3_yLK8bLi1AluF63zs9cOo" 
+							target="_blank" class="check-it-out">CHECK IT OUT</a>
+
+							<div class="price">
+								$24.70
+							</div>
+
+							<i class="fa-regular fa-heart fa-lg"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Product 5 -->
+				<div class="preview" data-target="p-5">
+					
+					<div class="close-btn">
+						<span class="material-symbols-outlined">close</span>
+					</div>
+
+					<!-- Left half of pop up -->
+					<div class="product-imgs">
+
+						<div class="img-featured">
+								<img src="images/products/5-cuisinart.jpg" alt="Cuisinart BBQ Tool">
+						</div>
+
+						<div class = "img-select">
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart2.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart3.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart4.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart5.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart6.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+							<div class = "img-item">
+								<img src="images/products/5-cuisinart7.jpg" alt="Cuisinart BBQ Tool">
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- Right half of pop up -->
+					<div class="product-details">
+						<h3>
+							Cuisinart CGS-5020 BBQ Tool Aluminum Carrying Case, Deluxe Grill Set, 20-Piece
+						</h3>
+						<p>
+							Introducing the Cuisinart CGS-5020 BBQ Tool Aluminum Carrying Case – Elevate Your Grilling Game!
+
+							Get ready to unleash your inner grill master with our deluxe 20-piece grill set. Packed with twenty essential tools, this kit has everything you need for the ultimate grilling experience. From the chef's spatula to the cleaning brush, each tool is meticulously crafted and conveniently stored in a durable aluminum carrying case – perfect for grilling on-the-go or at home.
+						</p>
+						<div class="footer">
+							<a href="https://www.amazon.com.au/Cuisinart-CGS-5020-Deluxe-Silver-20-Piece/dp/B013TR2ENQ/ref=sr_1_6?keywords=barbeque%2Bset&qid=1681431586&sr=8-6&th=1" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+
+							<div class="price">
+								$94.81
+							</div>
+
+							<i class="fa-regular fa-heart fa-lg"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Product 6 -->
+				<div class="preview" data-target="p-6">
+					
+					<div class="close-btn">
+						<span class="material-symbols-outlined">close</span>
+					</div>
+
+					<!-- Left half of pop up -->
+					<div class="product-imgs">
+
+						<div class="img-featured">
+							<img src="images/products/6-how-to-win-friends.jpg" alt="How To Win Friends Book">
+						</div>
+
+						<div class = "img-select">
+							<div class = "img-item">
+								<!-- No additional photos available thus left blank -->
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Right half of pop up -->
+					<div class="product-details">
+						<h3>
+							How to Win Friends and Influence People in the Digital Age | Available in Kindle, Hardcover, Paperback, Audio CD
+						</h3>
+						<p>
+							Since its initial publication, How to Win Friends and Influence People has sold a total of 15 million copies. The book continues to sell briskly today, but Carnegie never anticipated the ways in which the digital age would provide new tools and challenges for winning friends and influencing people. The advent of social networking sites, the dominance of email, and the ways in which the Internet has supplanted face-to-face interactions have made Carnegie's precepts all the more immediate and vital. Brent Cole, working in tandem with Dale Carnegie & Associates, Inc., has reimagined the original book for the digital age, updating and reframing Carnegie's insights about communication, self expression, and leadership.
+
+						</p>
+						<div class="footer">
+							<a href="https://www.amazon.com.au/How-Friends-Influence-People-Digital/dp/0857207288/ref=sr_1_5?keywords=how+to+win+friends+and+influence+people&qid=1683770160&sprefix=how+to+win+fr%2Caps%2C331&sr=8-5" 
+						target="_blank" class="check-it-out">CHECK IT OUT</a>
+
+							<div class="price">
+								$12.99
+							</div>
+
+							<i class="fa-regular fa-heart fa-lg"></i>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Product 7 -->
+				<div class="preview" data-target="p-7">
+					
+									<div class="close-btn">
+										<span class="material-symbols-outlined">close</span>
+									</div>
+				
+									<!-- Left half of pop up -->
+									<div class="product-imgs">
+				
+										<div class="img-featured">
+											<img src="images/products/7-dickasaurus.jpg"alt="Floating Wall Shelves 1">
+										</div>
+				
+										<div class = "img-select">
+											<div class = "img-item">
+												<img src="images/products/7-dickasaurus.jpg"alt="Floating Wall Shelves 1">
+											</div>
+											<div class = "img-item">
+												<img src="images/products/7-dickasaurus2.jpg"alt="Floating Wall Shelves 2">
+											</div>
+											<div class = "img-item">
+												<img src="images/products/7-dickasaurus3.jpg"alt="Floating Wall Shelves 3">
+											</div>
+											<div class = "img-item">
+												<img src="images/products/7-dickasaurus4.jpg"alt="Floating Wall Shelves 4">
+											</div>
+										</div>
+				
+									</div>
+				
+									<!-- Right half of pop up -->
+									<div class="product-details">
+										<h3>
+											Glow In The Dark! Dino-Dick Dickasaurus Rex Bachelorette Party Gift Funny Prank Green and Blue Glow						</p>
+										</h3>
+										<p>
+											These Glow In The Dark Dickasaurus Rex models are finely 3D 
+											printed to have the best looking quality possible. These make 
+											for fantastic Gag Gifts, Bachelor/Bachelorette Party gifts!
+											<br><br>
+											These come in ALL sizes From 1 to 8 Inches! Newly Added 
+											10/12/14Inch Monster sizes! The 14inch Monster is Truly Gigantic!						</p>
+										<div class="footer">
+											<a href="https://www.etsy.com/listing/969314313/glow-in-the-dark-dino-dick-dickasaurus?show_sold_out_detail=1&source=aw&utm_source=affiliate_window&utm_medium=affiliate&utm_campaign=us_location_buyer&utm_content=141392&utm_term=0&awc=6220_1684671408_6d0abed72b7c9fe050a3cb867eee2ad0" 
+											target="_blank" class="check-it-out">CHECK IT OUT</a>
+				
+											<div class="price">
+												$5.04+
+											</div>
+				
+											<i class="fa-regular fa-heart fa-lg"></i>
+										</div>
+									</div>
+				
+				</div>
+
+				<!-- Product 8 -->
+				<div class="preview" data-target="p-8">
+									
+									<div class="close-btn">
+										<span class="material-symbols-outlined">close</span>
+									</div>
+				
+									<!-- Left half of pop up -->
+									<div class="product-imgs">
+				
+										<div class="img-featured">
+											<img src="images/products/8-taco-slippers.jpg"alt="Teletubbies Costume 1">
+										</div>
+				
+										<div class = "img-select">
+											<div class = "img-item">
+												<img src="images/products/8-taco-slippers.jpg"alt="Teletubbies Costume 1">
+											</div>
+											<div class = "img-item">
+												<img src="images/products/8-taco-slippers2.jpg"alt="Teletubbies Costume 2">
+											</div>
+											<div class = "img-item">
+												<img src="images/products/8-taco-slippers3.jpg"alt="Teletubbies Costume 2">
+											</div>
+											<div class = "img-item">
+												<img src="images/products/8-taco-slippers4.jpg"alt="Teletubbies Costume 2">
+											</div>
+										</div>
+				
+									</div>
+				
+									<!-- Right half of pop up -->
+									<div class="product-details">
+										<h3>
+											Coddies Taco Slippers | Christmas Gift, Unisex Funny Slippers, Novelty Comfortable Pantuflas | Men, Women & Kids
+										</h3>
+										<p>
+											It's time to take Taco Tuesday to another level. Make yourself or someone else very happy by letting them unwrap the world’s most delicious gift.
+											<br><br>
+											Fancy turning into a walking taco? No, that doesn’t mean you smell like one, it means you’re wearing them on your feet.						</p>
+										<div class="footer">
+											<a href="https://www.etsy.com/listing/987140438/coddies-taco-slippers-christmas-gift?show_sold_out_detail=1&source=aw&utm_source=affiliate_window&utm_medium=affiliate&utm_campaign=us_location_buyer&utm_content=141392&utm_term=0&awc=6220_1684671698_9409e1fe5c9a8b53577da8775715b79c" 
+											target="_blank" class="check-it-out">CHECK IT OUT</a>
+				
+											<div class="price">
+												$47.24
+											</div>
+				
+											<i class="fa-regular fa-heart fa-lg"></i>
+				
+										</div>
+									</div>
+				
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Custom link for my Javascript functions -->
+		<script src="script.js" ></script>
+
+  </body>
+</html>
